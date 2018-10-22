@@ -9,7 +9,7 @@ from numbers import Number
 
 
 def clear_list_strings(strings: list) -> list:
-    r"""
+    """
     Clear a list of strings.
 
     Remove newlines character in each string of a list and takes of all empty
@@ -45,7 +45,7 @@ def list_by_list(list_with_elements: list,
 
 @singledispatch
 def nun_or_match(matcher, element):
-    r"""
+    """
     Discover if matcher ir a Number or String and match then.
 
     >>> nun_or_match(7, 7)
@@ -62,7 +62,7 @@ def nun_or_match(matcher, element):
 
 @nun_or_match.register(str)
 def str_eq(matcher, element):
-    r"""
+    """
     Match strings or regex using re.match, called by nun_or_match.
 
     >>> nun_or_match('\w+', 'Hello')
@@ -73,7 +73,7 @@ def str_eq(matcher, element):
 
 @nun_or_match.register(Number)
 def number_eq(matcher, element):
-    r"""
+    """
     Match numbers , called by nun_or_match.
 
     >>> nun_or_match(7, 7)
