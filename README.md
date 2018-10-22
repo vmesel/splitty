@@ -40,6 +40,6 @@ from splitty import *
 
 # TODO:
 - Implement documentation
-- Write tests using hypotheses
+- Write tests using hypothesis
 - Lazy alternatives
 - File manipulation objects
